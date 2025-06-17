@@ -6,8 +6,36 @@
     <title>Weather Pro</title>
     <script src="https://cdn.jsdelivr.net/npm/@tailwindcss/browser@4"></script>
 </head>
-<body class="bg-black">
-    <div class="max-w-6xl mx-auto">
+<body class="bg-[#f3f4f6]">
+    <!-- Start Navbar Wrapper -->
+    <div class="w-full bg-white shadow">
+        <nav class="flex justify-between items-center mx-auto max-w-6xl">
+            <div class="flex items-center gap-x-2">
+                <span class="bg-[#1565c0] p-2 mr-2 flex items-center justify-center rounded">
+                    <i data-lucide="sun" class="w-6 h-6 text-white"></i>
+                </span>
+                <a href="#" class="text-xl font-bold">WeatherPro</a>
+            </div>
+            <div class="flex items-center gap-x-3">
+                <div class="flex items-center border border-gray-300 rounded px-2 bg-white">
+                    <i data-lucide="search" class="w-5 h-5 text-gray-500"></i>
+                    <input
+                        type="text"
+                        id="search-navbar"
+                        class="p-2 pl-2 rounded-none outline-none bg-transparent"
+                        placeholder="Rechercher une ville"
+                    >
+                </div>
+                <a href="#" class="p-4 cursor-pointer"><i data-lucide="settings"></i></a>
+            </div>
+        </nav>
+    </div>
+    <!-- End Navbar Wrapper -->
+
+
+    <!-- Main Container -->
+    <div class="max-w-6xl mx-auto pt-10">
+
         <!-- Start Weather Map -->
         <div class="bg-white rounded-lg relative p-6">
             <h3 class="font-bold">Carte Météo</h3>
