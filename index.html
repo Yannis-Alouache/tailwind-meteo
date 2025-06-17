@@ -16,16 +16,19 @@
                 </span>
                 <a href="#" class="text-xl font-bold">WeatherPro</a>
             </div>
+
             <div class="flex items-center gap-x-3">
-                <div class="flex items-center border border-gray-300 rounded px-2 bg-white">
+
+                <div class="items-center sm:border sm:border-gray-300 rounded px-2 bg-white flex">
                     <i data-lucide="search" class="w-5 h-5 text-gray-500"></i>
                     <input
                         type="text"
                         id="search-navbar"
-                        class="p-2 pl-2 rounded-none outline-none bg-transparent"
+                        class="p-2 pl-2 rounded-none outline-none bg-transparent hidden sm:block"
                         placeholder="Rechercher une ville"
                     >
                 </div>
+
                 <a href="#" class="p-4 cursor-pointer"><i data-lucide="settings"></i></a>
             </div>
         </nav>
@@ -113,11 +116,10 @@
         <!-- End Weather Details -->
 
         <!-- Start Weather Forecast -->
-        <div class="grid grid-cols-12 gap-10 mb-8">
-            <!-- Left Part -->
-            <div class="col-span-8 bg-white rounded-lg p-4 shadow">
+        <!-- <div class="grid grid-cols-12 gap-10 mb-8">
+            <div class="col-span-8 bg-white rounded-lg p-4 shadow h-fit">
                 <h3 class="font-bold mb-4">Prévisions 7 jours</h3>
-                <div class="flex flex-col gap-3 min-w-[320px]">
+                <div class="flex flex-col gap-5 min-w-[320px]">
                     <div class="flex items-center justify-between p-3 bg-blue-50 rounded-lg mb-2">
                         <div class="flex items-center gap-3 text-sm">
                             <span class="font-semibold w-22">Aujourd'hui</span>
@@ -179,7 +181,6 @@
                     </div>
                 </div>
             </div>
-            <!-- Right Part -->
             <div class="col-span-4 bg-white rounded-lg p-4 flex flex-col gap-5 shadow">
                 <div>
                     <h3 class="font-bold mb-4">Température (24h)</h3>
@@ -235,7 +236,6 @@
 
                 <hr class="divider text-gray-200">
 
-                <!-- Soleil -->
                 <div>
                     <h4 class="font-bold mb-2">Soleil</h4>
                     <div class="flex flex-col gap-1">
@@ -256,7 +256,7 @@
                     </div>
                 </div>
             </div>
-        </div>
+        </div> -->
         <!-- End Weather Forecast  -->
 
         <!-- Start Weather Map -->
