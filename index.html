@@ -113,8 +113,9 @@
         <!-- End Weather Details -->
 
         <!-- Start Weather Forecast -->
-        <div class="grid grid-cols-1 lg:grid-cols-12 gap-4 mb-8">
-            <div class="lg:col-span-8 bg-white rounded-lg p-4 overflow-x-auto">
+        <div class="grid grid-cols-12 gap-10 mb-8">
+            <!-- Left Part -->
+            <div class="col-span-8 bg-white rounded-lg p-4 shadow">
                 <h3 class="font-bold mb-4">Prévisions 7 jours</h3>
                 <div class="flex flex-col gap-3 min-w-[320px]">
                     <div class="flex items-center justify-between p-3 bg-blue-50 rounded-lg mb-2">
@@ -178,12 +179,97 @@
                     </div>
                 </div>
             </div>
-            <div class="lg:col-span-4 bg-white rounded-lg mt-4 lg:mt-0">2</div>
+            <!-- Right Part -->
+            <div class="col-span-4 bg-white rounded-lg p-4 flex flex-col gap-5 shadow">
+                <!-- Température (24h) -->
+                <div>
+                    <h3 class="font-bold mb-4">Température (24h)</h3>
+                    <div class="flex items-end justify-between h-32 w-full mb-2">
+                        <!-- Bar: 00h -->
+                        <div class="flex flex-col items-center">
+                            <div class="w-5 h-16 rounded-t bg-blue-300"></div>
+                            <span class="text-xs text-gray-400 mt-1">00h</span>
+                        </div>
+                        <!-- Bar: 03h -->
+                        <div class="flex flex-col items-center">
+                            <div class="w-5 h-12 rounded-t bg-blue-300"></div>
+                            <span class="text-xs text-gray-400 mt-1">03h</span>
+                        </div>
+                        <!-- Bar: 06h -->
+                        <div class="flex flex-col items-center">
+                            <div class="w-5 h-8 rounded-t bg-blue-200"></div>
+                            <span class="text-xs text-gray-400 mt-1">06h</span>
+                        </div>
+                        <!-- Bar: 09h -->
+                        <div class="flex flex-col items-center">
+                            <div class="w-5 h-20 rounded-t bg-gradient-to-t from-yellow-300 to-orange-400"></div>
+                            <span class="text-xs text-gray-400 mt-1">09h</span>
+                        </div>
+                        <!-- Bar: 12h -->
+                        <div class="flex flex-col items-center">
+                            <div class="w-5 h-25 rounded-t bg-gradient-to-t from-orange-400 to-red-300"></div>
+                            <span class="text-xs text-gray-400 mt-1">12h</span>
+                        </div>
+                        <!-- Bar: 15h -->
+                        <div class="flex flex-col items-center">
+                            <div class="w-5 h-25 rounded-t bg-gradient-to-t from-orange-400 to-red-300"></div>
+                            <span class="text-xs text-gray-400 mt-1">15h</span>
+                        </div>
+                        <!-- Bar: 18h -->
+                        <div class="flex flex-col items-center">
+                            <div class="w-5 h-20 rounded-t bg-gradient-to-t from-yellow-300 to-orange-400"></div>
+                            <span class="text-xs text-gray-400 mt-1">18h</span>
+                        </div>
+                        <!-- Bar: 21h -->
+                        <div class="flex flex-col items-center">
+                            <div class="w-5 h-15 rounded-t bg-blue-300"></div>
+                            <span class="text-xs text-gray-400 mt-1">21h</span>
+                        </div>
+                    </div>
+                </div>
+
+                <hr class="divider text-gray-200">
+
+                <div>
+                    <h4 class="font-weight-600 mb-2">Qualité de l'air</h4>
+                    <div class="flex items-center justify-between mb-1">
+                        <span class="text-sm text-gray-500">AQI</span>
+                        <span class="text-green-600 font-bold text-lg">42</span>
+                    </div>
+                    <div class="w-full h-2 bg-gray-100 rounded-full mb-1 relative">
+                        <div class="h-2 bg-green-500 rounded-full" style="width: 45%"></div>
+                    </div>
+                    <span class="text-green-600 text-sm font-medium">Bonne</span>
+                </div>
+
+                <hr class="divider text-gray-200">
+
+                <!-- Soleil -->
+                <div>
+                    <h4 class="font-bold mb-2">Soleil</h4>
+                    <div class="flex flex-col gap-1">
+                        <div class="flex items-center justify-between">
+                            <div class="flex items-center gap-2">
+                                <i data-lucide="sun" fill="#ffd500" class="text-2xl text-orange-400"></i>
+                                <span class="text-gray-600 text-sm">Lever</span>
+                            </div>
+                            <span class="font-semibold text-sm">07:42</span>
+                        </div>
+                        <div class="flex items-center justify-between">
+                            <div class="flex items-center gap-2">
+                                <i data-lucide="sun" fill="#ffd500" class="text-2xl text-orange-400"></i>
+                                <span class="text-gray-600 text-sm">Coucher</span>
+                            </div>
+                            <span class="font-semibold text-sm">17:23</span>
+                        </div>
+                    </div>
+                </div>
+            </div>
         </div>
         <!-- End Weather Forecast  -->
 
         <!-- Start Weather Map -->
-        <div class="bg-white rounded-lg relative p-4 sm:p-6 mt-8">
+        <div class="bg-white rounded-lg relative p-6 my-8 shadow">
             <h3 class="font-bold">Carte Météo</h3>
             <div class="bg-[#cadffe] text-[#406bd8] relative rounded-lg mt-6 p-4 flex flex-col items-center lg:py-20">
                 <i data-lucide="map-pin" class="size-14 ml-2"></i>
