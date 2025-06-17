@@ -38,7 +38,7 @@
     <div class="max-w-6xl mx-auto pt-10">
 
         <!-- Start Weather Card -->
-         <div class="w-full rounded-2xl bg-gradient-to-r from-blue-500 to-purple-600 text-white p-8 flex justify-between items-center shadow-lg">
+        <div class="w-full rounded-2xl bg-gradient-to-r from-blue-500 to-purple-600 text-white p-8 flex justify-between items-center shadow-lg mb-8">
             <div>
                 <h1 class="text-xl font-semibold">Paris, France</h1>
                 <p class="text-sm text-white/80">Mercredi, 16 Décembre 2024</p>
@@ -60,6 +60,77 @@
             </div>
         </div>
         <!-- End Weather Card -->
+
+        <!-- Start Weather Forecast -->
+        <div class="grid grid-cols-12 gap-4 mb-8">
+            <div class="col-span-8 bg-white rounded-lg p-4">
+                <h3 class="font-bold mb-4">Prévisions 7 jours</h3>
+                <div class="flex flex-col gap-3">
+                    <div class="flex items-center justify-between p-3 bg-blue-50 rounded-lg mb-2">
+                        <div class="flex items-center gap-3 text-sm">
+                            <span class="font-semibold w-22">Aujourd'hui</span>
+                            <i data-lucide="sun" fill="#ffd500" class="text-2xl text-[#ffd500]"></i>
+                            <span class="text-gray-500">Ensoleillé</span>
+                        </div>
+                        <div class="flex items-center gap-3">
+                            <span class="text-gray-400 text-sm">18°</span>
+                            <span class="font-bold">26°</span>
+                        </div>
+                    </div>
+
+                    <div class="flex items-center justify-between p-3">
+                        <div class="flex items-center gap-3 text-sm">
+                            <span class="text-gray-500 w-22">Demain</span>
+                            <i data-lucide="cloud" fill="gray" class="text-2xl text-gray-400"></i>
+                            <span class="text-gray-500">Nuageux</span>
+                        </div>
+                        <div class="flex items-center gap-3">
+                            <span class="text-gray-400 text-sm">15°</span>
+                            <span class="font-bold">23°</span>
+                        </div>
+                    </div>
+
+                    <div class="flex items-center justify-between p-3">
+                        <div class="flex items-center gap-3 text-sm">
+                            <span class="text-gray-500 w-22">Vendredi</span>
+                            <i data-lucide="cloud-hail" fill="#51a2ff" class="text-2xl text-blue-400"></i>
+                            <span class="text-gray-500">Pluie</span>
+                        </div>
+                        <div class="flex items-center gap-3">
+                            <span class="text-gray-400 text-sm">12°</span>
+                            <span class="font-bold">19°</span>
+                        </div>
+                    </div>
+
+                    <div class="flex items-center justify-between p-3">
+                        <div class="flex items-center gap-3 text-sm">
+                            <span class="text-gray-500 w-22">Samedi</span>
+                            <i data-lucide="sun" fill="#ffd500" class="text-2xl text-[#ffd500]"></i>
+                            <span class="text-gray-500">Ensoleillé</span>
+                        </div>
+                        <div class="flex items-center gap-3">
+                            <span class="text-gray-400 text-sm">16°</span>
+                            <span class="font-bold">24°</span>
+                        </div>
+                    </div>
+
+                    <div class="flex items-center justify-between p-3">
+                        <div class="flex items-center gap-3 text-sm">
+                            <span class="text-gray-500 w-22">Dimanche</span>
+                            <i data-lucide="cloud-sun" fill="gray" class="text-2xl text-[#ffd500]"></i>
+                            <span class="text-gray-500">Partiellement nuageux</span>
+                        </div>
+                        <div class="flex items-center gap-3">
+                            <span class="text-gray-400 text-sm">14°</span>
+                            <span class="font-bold">21°</span>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="col-span-4 bg-white rounded-lg">2</div>
+        </div>
+        <!-- End Weather Forecast  -->
+
 
         <!-- Start Weather Map -->
         <div class="bg-white rounded-lg relative p-6 mt-8">
