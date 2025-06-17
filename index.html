@@ -29,6 +29,7 @@
                 <a href="#" class="p-4 cursor-pointer"><i data-lucide="settings"></i></a>
             </div>
         </nav>
+        
     </div>
     <!-- End Navbar Wrapper -->
 
@@ -36,8 +37,32 @@
     <!-- Main Container -->
     <div class="max-w-6xl mx-auto pt-10">
 
+        <!-- Start Weather Card -->
+         <div class="w-full rounded-2xl bg-gradient-to-r from-blue-500 to-purple-600 text-white p-8 flex justify-between items-center shadow-lg">
+            <div>
+                <h1 class="text-xl font-semibold">Paris, France</h1>
+                <p class="text-sm text-white/80">Mercredi, 16 Décembre 2024</p>
+            
+                <div class="mt-4 flex items-end space-x-4">
+                    <span class="text-5xl font-light">22°</span>
+                    <div>
+                        <p class="text-xl">Ensoleillé</p>
+                        <p class="text-sm text-white/80">Ressenti 25°</p>
+                    </div>
+                </div>
+            </div>
+            <div class="flex flex-col items-center">
+                <i data-lucide="sun" class="w-16 h-16 text-yellow-300"></i>
+                <div class="text-sm mt-2 text-center">
+                    <p>Max: 26°</p>
+                    <p>Min: 18°</p>
+                </div>
+            </div>
+        </div>
+        <!-- End Weather Card -->
+
         <!-- Start Weather Map -->
-        <div class="bg-white rounded-lg relative p-6">
+        <div class="bg-white rounded-lg relative p-6 mt-8">
             <h3 class="font-bold">Carte Météo</h3>
             <div class="bg-[#cadffe] text-[#406bd8] relative rounded-lg mt-6 p-4 flex flex-col items-center lg:py-20">
                 <i data-lucide="map-pin" class="size-14 ml-2"></i>
