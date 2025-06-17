@@ -4,8 +4,25 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Weather Pro</title>
+    <script src="https://cdn.jsdelivr.net/npm/@tailwindcss/browser@4"></script>
 </head>
-<body>
+<body class="bg-black">
+    <div class="max-w-6xl mx-auto">
+        <!-- Start Weather Map -->
+        <div class="bg-white rounded-lg relative p-6">
+            <h3 class="font-bold">Carte Météo</h3>
+            <div class="bg-[#cadffe] text-[#406bd8] relative rounded-lg mt-6 p-4 flex flex-col items-center lg:py-20">
+                <i data-lucide="map-pin" class="size-14 ml-2"></i>
+                <p class="font-bold">Paris, France</p>
+                <button class="cursor-pointer">Cliquez pour voir la carte interactive</button>
+            </div>
+        </div>
+        <!-- End Weather Map -->
+    </div>
     
+    <script src="https://unpkg.com/lucide@latest"></script>
+    <script>
+        lucide.createIcons();
+    </script>
 </body>
 </html>
